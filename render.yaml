@@ -9,7 +9,7 @@ services:
         value: mongodb+srv://skdsouvikdas:veer_pass1234@cluster0.2iofmlc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       - key: PORT
         value: 5000
-    plan: free
+    plan: starter
     autoDeploy: true
 
   - type: web
@@ -17,5 +17,5 @@ services:
     env: static
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: client/build
-    plan: free
+    plan: starter
     autoDeploy: true
